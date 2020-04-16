@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Thanh Hoa ICT</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+  <!-- Custom styles for this template -->
+  <link href="./css/clean-blog.css" rel="stylesheet">
+  <script src="./js/custom.js"></script>
+</head>
+
+<body style="background-color: #f4f1f1;">
+  <!-- Navigation -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-10 mx-auto">
+        <img src="./img/ezgif.com-crop.gif" width="100%" class="mx-auto">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #006699;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar" >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Hội nghị trực tuyến</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chủ trì</a>
+          </li>    
+        </ul>
+      </div>    
+    </nav>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 mx-auto mb-3 mt-3">
+        <h3 style="font-weight: 600;">Bạn muốn tổ chức cuộc họp ngay</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-10 mx-auto">
+        <p class="my-3"><strong>Bắt đầu cuộc họp mới có tên:</strong></p>
+        <div id="error1" class="" style="display: none;"></div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Điền tên phòng" pattern="[A-Za-z0-9]{1,100}" required id="input1">
+        </div>
+        <p class="border rounded-lg p-2 bg-light mt-2">Lưu ý:  Tên phòng họp cần cần viết liền, không dấu, đảm bảo tính duy nhất</p>
+        <button id="btn1" onclick="redirect1()" type="button" class="btn btn-block btn-primary" style="border-radius: 25px;"><strong>Khởi tạo</strong></button>
+        <p id="demo"></p>
+      </div>
+      <div class="col-lg-6 col-md-10 mx-auto">
+        <p class="my-3"><strong>Tham gia cuộc họp đang diễn ra có tên:</strong></p>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Điền tên phòng" pattern="[A-Za-z0-9]{1,100}" required id="input2">
+        </div>
+        <p class="border rounded-lg p-2 bg-light mt-2">Lưu ý: Để tham gia cuộc họp đang diễn ra, bạn cần điền tên phòng họp mà bạn đã được thông báo</p>
+        <button id="btn2" onclick="redirect2()" type="button" class="btn btn-block btn-primary" style="border-radius: 25px;"><strong>Vào họp</strong></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 text-center">
+        <p>Để tham gia cuộc họp bằng Smartphone hoặc Tablet, bạn cần tải ứng dụng “<strong>Jitsi Meet</strong>”:</p>
+        <div class="">
+          <a href="https://apps.apple.com/us/app/jitsi-meet/id1165103905"><img style="width:150px" src="./img/app_store.png" alt=""></a>
+          <a href="https://play.google.com/store/apps/details?id=org.jitsi.meet&hl=en"><img style="width:150px" src="./img/google_play.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 text-center text-white" style="background-color: #006699;">
+          <h6 class="mt-3 mb-2 text-uppercase"><strong>Trung tâm CNTT & TT Thanh Hóa</strong></h6>
+          <p class="my-0" style="font-size: 16px;">Hệ thống họp trực tuyến được triển khai trên hạ tầng <strong>Cloud365 - NhanHoa Software Company</strong></p>
+          <p class="mt-0 mb-3" style="font-size: 16px;">Liên hệ tư vến và hỗ trợ (<em>rd@nhanhoa.com.vn</em>)</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+  
+  
+</body>
+
+</html>
